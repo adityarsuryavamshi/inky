@@ -1,15 +1,11 @@
-# Ink
-Crisp, minimal personal website and blog theme Hugo. Forked from [Ezhil](https://github.com/vividvilla/ezhil).
-
-## Demo
-[View demo](https://hugo-ink.netlify.com)
-![Screenshot](https://user-images.githubusercontent.com/547147/69119000-3ace9280-0abb-11ea-81bc-5af68433e845.png "Ink light theme")
+# Inky
+A Hugo theme with custom preferences for my blog forked from [Hugo Ink](https://github.com/knadh/hugo-ink) which itself was forked from [Ezhil](https://github.com/vividvilla/ezhil).
 
 ## Features
-* Google Analytics integration
+* **Removed** Google Analytics integration
 * Syntax highlighting
 * Twitter cards and opengraph tags support
-* Disqus comments
+* **Removed** Disqus comments
 * RSS feeds
 * Custom CSS/JS
 * Multilingual months support
@@ -66,6 +62,7 @@ EOF
 
 ## Credits
 
-* [Ezhil theme](https://github.com/vividvilla/ezhil) from which Ink was forked
+* [Hugo Ink](https://github.com/knadh/hugo-ink)
+* [Ezhil theme](https://github.com/vividvilla/ezhil) from which Hugo Ink was forked
 
 Licensed under the MIT license.
