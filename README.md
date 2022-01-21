@@ -15,7 +15,7 @@ A Hugo theme with custom preferences for my blog forked from [Hugo Ink](https://
 cd into your hugo site's root directory and:
 
 ```sh
-git submodule add https://github.com/theNewDynamic/gohugo-theme-ananke.git themes/ananke
+git submodule add https://github.com/Nial26/inky.git themes/inky
 ```
 
 Note : It's important to add the theme as a submodule especially if you're using the default github pages action mentioned on [gohugo](https://gohugo.io/hosting-and-deployment/hosting-on-github/#build-hugo-with-github-action) since it fetches hugo themes from submodules 
