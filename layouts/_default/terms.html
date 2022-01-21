@@ -8,17 +8,30 @@
 
 		<h1 class="page-title">{{ .Name }}</h1>
 
-		{{ $biggest := 1 }}
-		{{ $smallest := 1 }}
-		{{ $max := 3 }}
+		{{ $max := 2 }}
 		{{ $min := 1 }}
-		{{ $size := $min }}
+		{{ $size := 0 }}
+		{{ $maxValueCount := 1 }}
+
 
 		{{ $data := .Data }}
+		{{ range $key, $value := .Data.Terms.ByCount}}
+			{{ $maxValueCount = (cond (gt $value.Count $maxValueCount ) $value.Count $maxValueCount) }}
+		{{ end }}
+
+		{{ $maxValueCount = float $maxValueCount }}
+
+		
 		<div class="tag-cloud">
 		{{ range $key, $value := .Data.Terms.ByCount }}
-			{{ $size := (add (mul (div $value.Count $biggest) (sub $max $min)) $min) }}
-			{{ $size := (cond (eq $biggest $smallest) $min $size) }}
+		   
+			<!-- size := (value.count / maxValueCount) * max -->
+			{{ $size = mul (div $value.Count $maxValueCount) $max }} 
+			<!--  min if size < min else size -->
+			{{ $size = cond (lt $size $min) $min $size }}
+			<!--  max if size < max else size -->
+			{{ $size = cond (gt $size $max) $max $size }}
+			
 			<a style="font-size: {{ $size }}rem;" href="{{ $.Site.LanguagePrefix | absURL }}{{ $data.Plural }}/{{ $value.Name | urlize }}/">{{ $value.Name }}<sup>{{ $value.Count }}</sup></a>
 		{{ end }}
 		</div>
