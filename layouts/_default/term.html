@@ -9,10 +9,13 @@
 		<h1 class="page-title">{{ .Title }}</h1>
 		
 		{{ with (.Site.GetPage .Title) }}
-		<ul>
+		<ul class="posts flat">
 			{{ range .Pages }}
-				<li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
-			{{ end }}
+				<li class="post">
+					{{ partial "post-preview.html" . }}
+				</li>
+			{{- end -}}
+			{{ template "partials/paginator.html" . }}
 		</ul>
 		{{ end }}
 	</div>
