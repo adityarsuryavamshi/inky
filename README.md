@@ -25,7 +25,7 @@ For more information read the [official setup guide](https://gohugo.io/overview/
 
 ## Content type
 
-You can specify content type with field `type` in your content. For example static pages can be set as type `page` which are excluded from recent posts and all posts page. You can use site params `mainSections` and `disableDisqusTypes` to control which page types are excluded from recent posts and Disqus comments respectively.
+You can specify content type with field `type` in your content. For example static pages can be set as type `page` which are excluded from recent posts and all posts page. You can use site params `mainSections` to control which page types are excluded from recent posts.
 
 ```md
 ---
