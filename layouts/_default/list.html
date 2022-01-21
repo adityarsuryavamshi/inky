@@ -5,12 +5,6 @@
 <body>
 	<div class="container wrapper list">
 		{{ partial "head.html" . }}
-
-		{{ if isset .Data "Term" }}
-			<h2>{{ .Data.Term }}</h2>
-		{{ else }}
-		<h2 class="page-title">{{ .Name }}</h2>
-		{{ end }}
 		
 		{{ .Content }}
 

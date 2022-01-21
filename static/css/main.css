@@ -177,7 +177,7 @@ ul.flat {
 ul.flat li {
     display: block;
     list-style: none;
-    margin-left: 0;
+    margin-left: -5px;
 }
 
 .prevent-collapse {
@@ -319,6 +319,10 @@ ul {
 }
 
 .recent-posts .posts .post {
+    margin-bottom: 45px;
+}
+
+.posts .post {
     margin-bottom: 45px;
 }
 
