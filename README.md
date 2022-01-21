@@ -1,14 +1,21 @@
 # Inky
 A Hugo theme with custom preferences for my blog forked from [Hugo Ink](https://github.com/knadh/hugo-ink) which itself was forked from [Ezhil](https://github.com/vividvilla/ezhil).
 
-## Features
-* **Removed** Google Analytics integration
+## Existing Features from Hugo Ink
+
 * Syntax highlighting
 * Twitter cards and opengraph tags support
-* **Removed** Disqus comments
 * RSS feeds
 * Custom CSS/JS
 * Multilingual months support
+
+## Additional Features
+
+* **Removed** Google Analytics integration
+* **Removed** Disqus comments
+* Added the ability to set the favicon to an emoji using site params `faviconemoji`
+* Fixed tag cloud font size to be weigthed based on the total number of posts in a particular tag 
+
 
 ## Installation
 
