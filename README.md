@@ -16,6 +16,7 @@ A Hugo theme with custom preferences for my blog forked from [Hugo Ink](https://
 * Added the ability to set the favicon to an emoji using site params `faviconemoji`  which takes precedence over the `favicon` param
 * Added the ability to set the avator to an emoji using site params `avataremoji` which takes precedence over the `avatar` image 
 * Fixed tag cloud font size to be weigthed based on the total number of posts in a particular tag 
+* Added Fathom Analytics which can be enabled by setting `fathomSiteId` in the site params
 
 
 ## Installation
