@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
 
 body {
-    font-family: "Inter", sans-serif;
+    font-family: 'Sen', sans-serif;
     font-weight: 400;
     color: #333;
     line-height: 1.8em;
@@ -335,7 +336,7 @@ ul {
     text-align: center;
 }
 .post-header .meta .date .day {
-    font-family: "Playfair Display", serif;
+    font-family: 'Mochiy Pop One', sans-serif;
     font-weight: 700;
     line-height: 0.45em;
     font-size: 3em;
