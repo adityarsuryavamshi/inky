@@ -47,12 +47,8 @@
 	{{- end }}
 
 	{{ if isset .Site.Params "fathomsiteid" }}
-		{{ if isset .Site.Params "fathomcustomdomain" }}
-			<script src="{{ .Site.Params.fathomcustomdomain }}" data-site="{{ .Site.Params.fathomsiteid }}" defer></script>
-		{{ else }}
-			<!-- Fathom - beautiful, simple website analytics -->
-			<script src="https://cdn.usefathom.com/script.js" data-site="{{ .Site.Params.fathomsiteid }}" defer></script>
-			<!-- / Fathom -->
-		{{ end }}
+		<!-- Fathom - beautiful, simple website analytics -->
+		<script src="https://cdn.usefathom.com/script.js" data-site="{{ .Site.Params.fathomsiteid }}" defer></script>
+		<!-- / Fathom -->
 	{{ end }}
 </head>
