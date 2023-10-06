@@ -3,9 +3,9 @@
 
 name = "Inky"
 license = "MIT"
-licenselink = "https://github.com/Nial26/inky/blob/master/LICENSE.md"
+licenselink = "https://github.com/adityarsuryavamshi/inky/blob/master/LICENSE.md"
 description = "Crisp, minimal personal website and blog theme Hugo."
-homepage = "https://github.com/Nial26/inky"
+homepage = "https://github.com/adityarsuryavamshi/inky"
 tags = ["minimal", "clean", "blog", "responsive", "personal", "simple", "minimalist", "portfolio", "dark"]
 features = ["blog", "Clean and minimal", "Responsive", "Social media links", "Syntax highlighting", "Dark mode"]
 min_version = "0.37.0"
